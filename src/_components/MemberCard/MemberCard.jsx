@@ -2,16 +2,15 @@
 //  and then use that component in the our team page
 import React from "react";
 
-// Component for displaying a single member's information
 const MemberCard = ({ name, image, socialLinks }) => {
   return (
     <div style={styles.card}>
-      {/* Display member's image */}
+      {/* image */}
       <img src={image} alt={name} style={styles.image} />
-      {/* Display member's name */}
+
       <h3>{name}</h3>
       <div style={styles.socialLinks}>
-        {/* Loop through social links and display each one */}
+        {/* Loop */}
         {socialLinks.map((link, index) => (
           <a
             key={index}
